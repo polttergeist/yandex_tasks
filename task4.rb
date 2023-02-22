@@ -4,8 +4,8 @@ def step(count, output_file, string = '', left = 0, right = 0)
   if left == count && right == count
     output_file.puts(string)
   else
-    step(count, output_file, "#{string}(", left+1, right) if left < count
-    step(count, output_file, "#{string})", left, right+1) if right < left
+    step(count, output_file, "#{string}(", left + 1, right) if left < count
+    step(count, output_file, "#{string})", left, right + 1) if right < left
   end
 end
 
